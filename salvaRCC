@@ -1701,14 +1701,14 @@ $("#btn_sub").click(function(){
             $(this).find('button[type="submit"]').text('Postando...');
             setTimeout(function () {
                 $.post('/post', {
-                    t: 12,
+                    t: 36345,
                         message: $('#fa-generated-message').val().trim(),
                         mode: 'reply',
                         tid: $('[name="tid"]:first').val(),
                         post: 1,
                 }).done(function () {
                         alert('Você será redirecionado para o tópico. Não esqueça de conferir sua postagem!');
-                location.href = 'http://' + location.host + '/t12-topico-de-teste#12';
+                location.href = 'http://' + location.host + '/t36345-cdc-requerimentos-de-membros';
                     }).fail(function () {
                         alert('Houve um erro! Tente novamente!');
                     });
